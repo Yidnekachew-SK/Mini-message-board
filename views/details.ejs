@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/detail-styles.css">
     <title>Mini Message Board</title>
 </head>
 <body>
     <h1>Message Detail</h1>
     <div>
-        <p>Written By: <%= message.user%></p>
-        <p>Message: <%= message.text%></p>
-        <p>Date written: <%= message.added%></p>
+        <p><b>Written By:</b> <%= message.user%></p>
+        <p><b>Message:</b> <%= message.text%></p>
+        <p><b>Date written:</b> <%= message.added%></p>
     </div>
 </body>
 </html>

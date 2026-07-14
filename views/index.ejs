@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index-styles.css">
     <title>Mini Message Board</title>
 </head>
 <body>
     <h1><%= title %></h1>
-    <a href="/new">Add new message</a>
+    <a href="/new" class="newMessageLink">Add new message</a>
     <% messages.forEach ((message, index) => { %>
-        <div>
-            <div>
+        <div class="messageCard">
+            <div class="messageInfo">
                 <p><%= message.user %></p>
                 <p><%= message.text %></p>
                 <p><%= message.added %></p>

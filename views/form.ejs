@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form-styles.css">
     <title>Mini Message Board</title>
 </head>
 <body>
     <h2>Add new Message</h2>
     <form method="post" action="/new">
-        <div>
+        <div class="formInput">
             <label for="name">Name: </label>
             <input type="text" id="name" name="textUser">
         </div>
 
-        <div>
+        <div class="formInput">
             <label for="message">Message: </label>
             <input type="text" id="message" name="textMessage">
         </div>

@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    padding: 10px 15px;
+}
+
+div p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
