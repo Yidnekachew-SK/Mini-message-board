@@ -8,15 +8,16 @@
 </head>
 <body>
     <h2>Add new Message</h2>
+    <%- include('errors') %>
     <form method="post" action="/new">
         <div class="formInput">
             <label for="name">Name: </label>
-            <input type="text" id="name" name="textUser">
+            <input type="text" id="name" name="textUser" required>
         </div>
 
         <div class="formInput">
             <label for="message">Message: </label>
-            <input type="text" id="message" name="textMessage">
+            <textarea name="textMessage" id="message" cols="40" rows="5"></textarea>
         </div>
         <button type="submit">Submit</button>
     </form>

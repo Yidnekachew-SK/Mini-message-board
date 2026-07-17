@@ -9,9 +9,9 @@
 <body>
     <h1>Message Detail</h1>
     <div>
-        <p><b>Written By:</b> <%= message.user%></p>
-        <p><b>Message:</b> <%= message.text%></p>
-        <p><b>Date written:</b> <%= message.added%></p>
+        <p><b>Written By:</b> <%= message[0].users %></p>
+        <p><b>Message:</b> <%= message[0].message %></p>
+        <p><b>Date written:</b> <%= message[0].date.toISOString().split("T")[0] %></p>
     </div>
 </body>
 </html>

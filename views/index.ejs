@@ -9,14 +9,14 @@
 <body>
     <h1><%= title %></h1>
     <a href="/new" class="newMessageLink">Add new message</a>
-    <% messages.forEach ((message, index) => { %>
+    <% messages.forEach ((message) => { %>
         <div class="messageCard">
             <div class="messageInfo">
-                <p><%= message.user %></p>
-                <p><%= message.text %></p>
-                <p><%= message.added %></p>
+                <p><%= message.users %></p>
+                <p><%= message.message %></p>
+                <p><%= message.date.toISOString().split("T")[0] %></p>
             </div>
-            <a href="/detail/<%= index %>">Open</a>
+            <a href="/detail/<%= message.id %>">Open</a>
         </div> 
     <% }); %>
 </body>

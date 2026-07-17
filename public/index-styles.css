@@ -19,6 +19,8 @@ h1 {
 .messageInfo {
     border-right: 1px solid;
     padding: 5px;
+    width: 500px;
+    overflow-wrap: break-word;
 }
 
 .messageInfo p {
